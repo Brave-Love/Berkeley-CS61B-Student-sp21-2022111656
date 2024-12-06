@@ -2,7 +2,7 @@ import java.io.File;
 
 public class CheckLabConfig {
 	public static void checkConfig(boolean isWindows) {
-		String repoVariableName = "REPO_DIR";
+		String repoVariableName = "CS61B_SP21_REPO_DIR";
 		String repoDir = System.getenv(repoVariableName);
 		checkVariableNotNull(repoDir, repoVariableName);
 		System.out.println("Validating your " + repoVariableName + 
@@ -10,7 +10,7 @@ public class CheckLabConfig {
 			               repoDir);
 		checkIsValidRepo(repoDir, repoVariableName, isWindows, false);
 
-		String snapsVariableName = "SNAPS_DIR";
+		String snapsVariableName = "CS61B_SP21_SNAPS_DIR";
 		String snapsRepoDir = System.getenv(snapsVariableName);
 
 		checkVariableNotNull(snapsRepoDir, snapsVariableName);
